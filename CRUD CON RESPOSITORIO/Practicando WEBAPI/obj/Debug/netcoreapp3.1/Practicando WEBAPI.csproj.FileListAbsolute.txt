@@ -1,0 +1,69 @@
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.exe
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.deps.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.runtimeconfig.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.runtimeconfig.dev.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.pdb
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.csprojAssemblyReference.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.AssemblyInfoInputs.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.AssemblyInfo.cs
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.RazorTargetAssemblyInfo.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\staticwebassets\Practicando WEBAPI.StaticWebAssets.Manifest.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\staticwebassets\Practicando WEBAPI.StaticWebAssets.xml
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.pdb
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.genruntimeconfig.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.csproj.CoreCompileInputs.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\Practicando WEBAPI\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.csproj.CopyComplete
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.exe
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.deps.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.runtimeconfig.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.runtimeconfig.dev.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.pdb
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.csprojAssemblyReference.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.AssemblyInfoInputs.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.AssemblyInfo.cs
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.csproj.CoreCompileInputs.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.RazorTargetAssemblyInfo.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.csproj.CopyComplete
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\staticwebassets\Practicando WEBAPI.StaticWebAssets.Manifest.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\staticwebassets\Practicando WEBAPI.StaticWebAssets.xml
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.pdb
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\BACKEND\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.genruntimeconfig.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.exe
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.deps.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.runtimeconfig.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.runtimeconfig.dev.json
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\Practicando WEBAPI.pdb
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.csprojAssemblyReference.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.AssemblyInfoInputs.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.AssemblyInfo.cs
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.csproj.CoreCompileInputs.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.RazorTargetAssemblyInfo.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.csproj.CopyComplete
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\staticwebassets\Practicando WEBAPI.StaticWebAssets.Manifest.cache
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\staticwebassets\Practicando WEBAPI.StaticWebAssets.xml
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.dll
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.pdb
+C:\Users\59177\Desktop\6 Semestre\TecnoWeb\ultimo Trabajo\CRUD CON RESPOSITORIO\Practicando WEBAPI\obj\Debug\netcoreapp3.1\Practicando WEBAPI.genruntimeconfig.cache
