@@ -15,19 +15,83 @@ window.addEventListener('load', (event) => {
             .then((data) => {
                 var BreedHTMLListMapped = data.map(p =>
                     `<div class="col-md-6">
-                    <a href="${p.name==="Undeads" | p.name==="Orcs" | p.name==="Humans" | p.name==="NightElves" ? p.name : "Humans"}.html">
+                    <a href="${p.name === "Undeads" | p.name === "Orcs" | p.name === "Humans" | p.name === "NightElves" ? p.name : "Humans"}.html">
                         <div class="image">
-                            <img src="images/${p.name==="Undeads" | p.name==="Orcs" | p.name==="Humans" | p.name==="NightElves" ? p.name : "Default"}.jpg" alt="${p.name}">
+                            <img src="images/${p.name === "Undeads" | p.name === "Orcs" | p.name === "Humans" | p.name === "NightElves" ? p.name : "Default"}.jpg" alt="${p.name}">                            
                         </div>
-                        <div class="image-title">
+                        <div class="image-title" >
                             <span>${p.name}</span>
                         </div>
+                        
                     </a>
                 </div>
                `);
                 var breedContent = `${BreedHTMLListMapped.join('')}`;
                 document.getElementById("breed-list-content").innerHTML = breedContent;
             })
+
+    }
+
+    function fetchGeSingleBreed() {
+        let localid = window.location.pathname.split("/")[1].split(".")[0];
+        fetch(`${baseUrl}${localid}`)
+            .then(response => {
+                if (response.status === 200) {
+                    return response.json();
+                } else {
+                    console.log("something wrong happened");
+                    return response.json()
+                }
+            })
+            .then((data) => {
+                var SingleBreedHtmlMapped = data.map(p =>
+                    `<div class="col-md-6">
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Id</td>
+                                <td>${p.id}</td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>${p.name}</td>
+                            </tr>
+                            <tr>
+                                <td>TypesOfUnity</td>
+                                <td>${p.typesOfUnity}</td>
+                            </tr>
+                            <tr>
+                                <td>DefaultColor</td>
+                                <td>${p.defaultColor}</td>
+                            </tr>
+                            <tr>
+                                <td>Reign</td>
+                                <td>${p.reign}</td>
+                            </tr>
+                            <tr>
+                                <td>ArmyName</td>
+                                <td>${p.armyName}</td>
+                            </tr>
+                            <tr>
+                                <td>Difficulty</td>
+                                <td>${p.difficulty}</td>
+                            </tr>
+                            <tr>
+                                <td>Rating</td>
+                                <td>${p.rating}</td>
+                            </tr>
+                        </tbody>
+                    </div>
+               `);
+                var SinglebreedContent = `<table class="table table-dark">${SingleBreedHtmlMapped.join('')}</table>`;
+                document.getElementById("Singlebreed-list-content").innerHTML = SinglebreedContent;
+            });
+
     }
 
     function fetchPostBreed(event) {
@@ -110,6 +174,9 @@ window.addEventListener('load', (event) => {
     if (document.getElementById("fetch-delete-Btn") != null) {
         document.getElementById("fetch-delete-Btn").addEventListener("click", fetchDeleteBreed);
     }
+    if (document.getElementById("fetch-Single-Btn") != null) {
+        document.getElementById("fetch-Single-Btn").addEventListener("click", fetchGeSingleBreed);
+    }
 
 
 
@@ -172,7 +239,7 @@ window.addEventListener('load', (event) => {
 
 /*
 
-                
+
             <label for="name">Name</label>
 
             <input type="text" name="name" id="form-name">
