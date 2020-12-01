@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/script.js"></script>
 </head>
 
 <body class="humanBackground">
@@ -61,6 +62,10 @@
                     <p>
                         Clases: Cazador, Brujo, Caballero de la muerte, Cazador, Guerrero, Mago, Paladín, Pícaro, Sacerdote, Monje.
                     </p>
+                    <input id="fetch-Single-Btn" type="button" value="FetchData">
+                    <section class="row" id="Singlebreed-list-content">
+
+                    </section>
                 </div>
             </div>
             <div class="col-md-6">
@@ -84,9 +89,19 @@
                     </style>
                 </div><br />
             </div>
+            <div class="deleteButton col-md-6" id="fetch-delete-Btn" style="text-align:right; margin-bottom: 20px;">
+                <button type="button" class="btn btn-danger" onclick="javascript:location.href='./main.html'">DELETE</button>
+            </div>
+            <div class="updateButton col-md-6" style="margin-bottom: 20px">
+                <button id="fetch-CreateForm-Btn" type="button" class="btn btn-secondary">EDIT</button>
+            </div>
+            <div id="breed-listready-content">
+
+            </div>
 
         </section>
     </div>
+
 
     <footer>
         <nav class="navbar-footer">

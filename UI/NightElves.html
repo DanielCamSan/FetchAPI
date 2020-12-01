@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/script.js"></script>
 </head>
 
 <body class="nightelvesBackground">
@@ -58,15 +59,16 @@
                     <p>
                         Zona de inicio: Las misiones de los elfos de la noche comienzan en Teldrassil, donde se interiorizan acerca de los cambios políticos ocurridos recientemente en Darnassus.
                     </p>
+                    <input id="fetch-Single-Btn" type="button" value="FetchData">
+                    <section class="row" id="Singlebreed-list-content">
+
+                    </section>
                 </div>
             </div>
             <div class="col-md-6">
                 <img width="500px" height="700px" style="margin-bottom: 20px;" src="images/NightElvesPage.jpg" alt="NightElves">
             </div>
-            <input id="fetch-Single-Btn" type="button" value="FetchData">
-            <section class="row" id="Singlebreed-list-content">
 
-            </section>
             <div class="col-md-12 text-center">
                 <div style="overflow:hidden;position: relative;"><iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="800" height="443" type="text/html" src="https://www.youtube.com/embed/3AZ9RwbDw9s?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"></iframe>
                     <div style="position: absolute;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"> <a href="https://logines.co.uk/" rel="nofollow">Login</a> </small></div>
@@ -86,6 +88,15 @@
                 </div><br />
             </div>
 
+            <div class="deleteButton col-md-6" id="fetch-delete-Btn" style="text-align:right; margin-bottom: 20px;">
+                <button type="button" class="btn btn-danger" onclick="javascript:location.href='./main.html'">DELETE</button>
+            </div>
+            <div class="updateButton col-md-6" style="margin-bottom: 20px">
+                <button id="fetch-CreateForm-Btn" type="button" class="btn btn-secondary">EDIT</button>
+            </div>
+            <div id="breed-listready-content">
+
+            </div>
         </section>
     </div>
 

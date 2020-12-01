@@ -1,6 +1,6 @@
 window.addEventListener('load', (event) => {
     const baseUrl = 'http://localhost:51740/api/Breeds/';
-    let breeds = [];
+    var breeds = [];
 
     function fetchBreeds() {
         fetch(baseUrl)
@@ -32,8 +32,44 @@ window.addEventListener('load', (event) => {
 
     }
 
-    function fetchGeSingleBreed() {
-        let localid = window.location.pathname.split("/")[1].split(".")[0];
+    function fetchGetSingleBreed() {
+        //let localid = window.location.pathname.split("/")[1].split(".")[0];
+        let nameBreed = window.location.pathname.split('.')[0].split('/')[1];
+        let localid;
+
+        if (nameBreed === "NightElves") {
+            localid = 4;
+        }
+        if (nameBreed === "Humans") {
+            localid = 3;
+        }
+        if (nameBreed === "Undeads") {
+            localid = 2;
+        }
+        if (nameBreed === "Orcs") {
+            localid = 1;
+        }
+
+        /*
+         debugger;
+         fetch(baseUrl)
+             .then(response => {
+                 debugger;
+                 if (response.status === 200) {
+                     return response.json();
+                 } else {
+                     console.log("something wrong happened");
+                     return response.json()
+                 }
+             })
+             .then((data) => {
+                 localid = data.map(p => {
+                     if (p.name === nameBreed) {
+                         return p.id
+                     }
+                 });
+                 debugger;
+             })*/
         fetch(`${baseUrl}${localid}`)
             .then(response => {
                 if (response.status === 200) {
@@ -43,8 +79,8 @@ window.addEventListener('load', (event) => {
                     return response.json()
                 }
             })
-            .then((data) => {
-                var SingleBreedHtmlMapped = data.map(p =>
+            .then(data => {
+                var SingleBreedHtmlMapped =
                     `<div class="col-md-6">
                         <thead>
                             <tr>
@@ -55,47 +91,46 @@ window.addEventListener('load', (event) => {
                         <tbody>
                             <tr>
                                 <td>Id</td>
-                                <td>${p.id}</td>
+                                <td>${data.id}</td>
                             </tr>
                             <tr>
                                 <td>Name</td>
-                                <td>${p.name}</td>
+                                <td>${data.name}</td>
                             </tr>
                             <tr>
                                 <td>TypesOfUnity</td>
-                                <td>${p.typesOfUnity}</td>
+                                <td>${ parseInt(data.typesofUnity)}</td>
                             </tr>
                             <tr>
                                 <td>DefaultColor</td>
-                                <td>${p.defaultColor}</td>
+                                <td>${data.defaultColor}</td>
                             </tr>
                             <tr>
                                 <td>Reign</td>
-                                <td>${p.reign}</td>
+                                <td>${data.reign}</td>
                             </tr>
                             <tr>
                                 <td>ArmyName</td>
-                                <td>${p.armyName}</td>
+                                <td>${data.armyName}</td>
                             </tr>
                             <tr>
                                 <td>Difficulty</td>
-                                <td>${p.difficulty}</td>
+                                <td>${data.difficulty}</td>
                             </tr>
                             <tr>
                                 <td>Rating</td>
-                                <td>${p.rating}</td>
+                                <td>${ parseFloat(data.rating)}</td>
                             </tr>
                         </tbody>
                     </div>
-               `);
-                var SinglebreedContent = `<table class="table table-dark">${SingleBreedHtmlMapped.join('')}</table>`;
+            `;
+                var SinglebreedContent = `<table class="table table-dark" style:"margin-left: 2px;>${SingleBreedHtmlMapped}</table>`;
                 document.getElementById("Singlebreed-list-content").innerHTML = SinglebreedContent;
             });
 
     }
 
     function fetchPostBreed(event) {
-        console.log(event.currentTarget);
         event.preventDefault();
         var data = {
             name: event.currentTarget.name.value,
@@ -106,18 +141,15 @@ window.addEventListener('load', (event) => {
             difficulty: event.currentTarget.difficulty.value,
             rating: parseFloat(event.currentTarget.rating.value)
         }
-        debugger;
         fetch(baseUrl, {
             headers: { "Content-Type": "application/json; charset=utf-8" },
             method: 'POST',
             body: JSON.stringify(data)
         }).then((response) => {
-            debugger;
             if (response.status === 201) {
                 console.log("Breed created successfuly");
             } else {
                 response.text().then((data) => {
-                    debugger;
                     console.log(data);
                 });
             }
@@ -126,7 +158,103 @@ window.addEventListener('load', (event) => {
         });
     }
 
+    function fetchCreateFromBreed(event) {
+        let nameBreed = window.location.pathname.split('.')[0].split('/')[1];
+        let localid;
+        if (nameBreed === "NightElves") {
+            localid = 4;
+        }
+        if (nameBreed === "Humans") {
+            localid = 3;
+        }
+        if (nameBreed === "Undeads") {
+            localid = 2;
+        }
+        if (nameBreed === "Orcs") {
+            localid = 1;
+        }
+        fetch(`${baseUrl}${localid}`)
+            .then(response => {
+                if (response.status === 200) {
+                    return response.json();
+                } else {
+                    console.log("something wrong happened");
+                    return response.json()
+                }
+            })
+            .then(data => {
+                var FormCreated =
+                    `<div class="col-md-3">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col-md-7">
+                    <input type="text" name="name" id="form-name" value="${data.name}">
+                </div>
+                <div class="col-md-3">
+                    <label for="typesOfUnity">Types Of Unitys</label>
+                </div>
+                <div class="col-md-7">
+                    <input type="number" name="typesOfUnity" id="form-typesOfUnity" value=${parseInt(data.typesofUnity)}>
+                </div>
+                <div class="col-md-3">
+                    <label for="defaultColor">Default Color</label>
+                </div>
+                <div class="col-md-7">
+                    <input type="text" name="defaultColor" id="form-defaultColor" value="${data.defaultColor}">
+                </div>
+                <div class="col-md-3">
+                    <label for="reign">Reign</label>
+                </div>
+                <div class="col-md-7">
+                    <input type="text" name="reign" id="form-reign" value="${data.reign}">
+                </div>
+                <div class="col-md-3">
+                    <label for="armyName">Army Name</label>
+                </div>
+                <div class="col-md-7">
+                    <input type="text" name="armyName" id="form-armyName" value="${data.armyName}">
+                </div>
+                <div class="col-md-3">
+                    <label for="difficulty">Difficulty</label>
+                </div>
+                <div class="col-md-7">
+                    <input type="text" name="difficulty" id="form-difficulty" value="${data.difficulty}">
+                </div>
+                <div class="col-md-3">
+                    <label for="rating">Rating</label>
+                </div>
+
+                <div class="col-md-7">
+                    <input type="number" name="rating" id="form-rating" value=${parseFloat(data.rating)}>
+                </div>
+                <div class="col-md-6" style="text-align : center;">
+                    <input type="submit" value="submit">
+                </div>
+        `;
+                var listReady = `<form id="fetch-update-frm" class="row">${FormCreated}</form>`;
+                document.getElementById("breed-listready-content").innerHTML = listReady;
+                debugger;
+            });
+
+    }
+
     function fetchUpdateBreed(event) {
+        let nameBreed = window.location.pathname.split('.')[0].split('/')[1];
+        let localid;
+        if (nameBreed === "NightElves") {
+            localid = 4;
+        }
+        if (nameBreed === "Humans") {
+            localid = 3;
+        }
+        if (nameBreed === "Undeads") {
+            localid = 2;
+        }
+        if (nameBreed === "Orcs") {
+            localid = 1;
+        }
+        event.preventDefault();
+        debugger;
         var data = {
             name: event.currentTarget.name.value,
             typesOfUnity: parseInt(event.currentTarget.typesOfUnity.value),
@@ -137,7 +265,7 @@ window.addEventListener('load', (event) => {
             rating: parseFloat(event.currentTarget.rating.value)
         }
         debugger;
-        fetch(baseUrl, {
+        fetch(`${baseUrl}${localid}`, {
             headers: { "Content-Type": "application/json; charset=utf-8" },
             method: 'PUT',
             body: JSON.stringify(data)
@@ -157,11 +285,56 @@ window.addEventListener('load', (event) => {
     }
 
     function fetchDeleteBreed(event) {
-        var idToDelete = parseInt(event.currentTarget.id.value);
+        let nameBreed = window.location.pathname.split('.')[0].split('/')[1];
+        let idToDelete;
+
+        if (nameBreed === "NightElves") {
+            idToDelete = 4;
+        }
+        if (nameBreed === "Humans") {
+            idToDelete = 3;
+        }
+        if (nameBreed === "Undeads") {
+            idToDelete = 2;
+        }
+        if (nameBreed === "Orcs") {
+            idToDelete = 1;
+        }
+        //var idToDelete = parseInt(event.currentTarget.id.value);
+        debugger;
         fetch(`${baseUrl}${idToDelete}`, {
             method: "DELETE"
         });
     }
+
+
+    function fetchDeleteDownRating(event) {
+        debuggerl
+        event.preventDefault();
+        var data = {
+            rating: parseFloat(event.currentTarget.rating.value)
+        }
+        fetch(baseUrl)
+            .then(response => {
+                if (response.status === 200) {
+                    return response.json();
+                } else {
+                    console.log("something wrong happened");
+                    return response.json()
+                }
+            })
+            .then((data) => {
+                data.forEach(p => {
+                    if (p.rating < data.rating) {
+                        fetch(`${baseUrl}${p.id}`, {
+                            method: "DELETE"
+                        });
+                    }
+                });
+            })
+
+    }
+
     if (document.getElementById("fetch-Btn") != null) {
         document.getElementById("fetch-Btn").addEventListener("click", fetchBreeds);
     }
@@ -175,10 +348,14 @@ window.addEventListener('load', (event) => {
         document.getElementById("fetch-delete-Btn").addEventListener("click", fetchDeleteBreed);
     }
     if (document.getElementById("fetch-Single-Btn") != null) {
-        document.getElementById("fetch-Single-Btn").addEventListener("click", fetchGeSingleBreed);
+        document.getElementById("fetch-Single-Btn").addEventListener("click", fetchGetSingleBreed);
     }
-
-
+    if (document.getElementById("fetch-CreateForm-Btn") != null) {
+        document.getElementById("fetch-CreateForm-Btn").addEventListener("click", fetchCreateFromBreed);
+    }
+    if (document.getElementById("BL-form") != null) {
+        document.getElementById("BL-form").addEventListener("submit", fetchDeleteDownRating);
+    }
 
     //.then(json => console.log(json))
 });

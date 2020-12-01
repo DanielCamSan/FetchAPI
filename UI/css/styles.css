@@ -162,6 +162,22 @@ body.nightelvesBackground {
     ;
 }
 
+body div .col-md-7 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+body div .col-md-3 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(78, 7, 7);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgb(187, 196, 175, 0.2)
+}
+
 
 /******************** Form Create *************/
 
@@ -172,20 +188,17 @@ body.nightelvesBackground {
     margin-bottom: 50px;
 }
 
-.main-content-form #fetch-frm .col-md-7 {
-    margin-bottom: 20px;
-    text-align: left;
-}
 
-.main-content-form #fetch-frm .col-md-3 {
-    margin-bottom: 20px;
-    margin-left: 20px;
+/************* BL *****************/
+
+.mainContent .Instructions {
+    color: black;
+    background-color: rgb(248, 238, 238, 0.3);
+    font-size: 30px;
+    text-align: left;
+    width: 50%;
     font-family: 'Fredoka One', cursive;
-    color: rgb(78, 7, 7);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 25px;
-    background-color: rgb(187, 196, 175, 0.2)
+    margin-bottom: 50px;
 }
 
 

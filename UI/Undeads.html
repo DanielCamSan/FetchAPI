@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/script.js"></script>
 </head>
 
 <body class="undeadBackground">
@@ -60,6 +61,10 @@
                     <p>
                         Zona de inicio: Las misiones de los Renegados comienzan en los Claros de Tirisfal, donde las Val'kyr los vuelven a la vida como Renegados de segunda generación y se enteran de los nuevos y amenazadores planes de Sylvanas.
                     </p>
+                    <input id="fetch-Single-Btn" type="button" value="FetchData">
+                    <section class="row" id="Singlebreed-list-content">
+
+                    </section>
                 </div>
             </div>
             <div class="col-md-6">
@@ -83,7 +88,15 @@
                     </style>
                 </div><br />
             </div>
+            <div class="deleteButton col-md-6" id="fetch-delete-Btn" style="text-align:right; margin-bottom: 20px;">
+                <button type="button" class="btn btn-danger" onclick="javascript:location.href='./main.html'">DELETE</button>
+            </div>
+            <div class="updateButton col-md-6" style="margin-bottom: 20px">
+                <button id="fetch-CreateForm-Btn" type="button" class="btn btn-secondary">EDIT</button>
+            </div>
+            <div id="breed-listready-content">
 
+            </div>
         </section>
     </div>
 
