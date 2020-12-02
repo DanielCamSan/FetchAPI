@@ -233,7 +233,7 @@ window.addEventListener('load', (event) => {
         `;
                 var listReady = `<form id="fetch-update-frm" class="row">${FormCreated}</form>`;
                 document.getElementById("breed-listready-content").innerHTML = listReady;
-                debugger;
+                document.getElementById("fetch-update-frm").addEventListener("submit", fetchUpdateBreed);
             });
 
     }
@@ -285,9 +285,9 @@ window.addEventListener('load', (event) => {
     }
 
     function fetchDeleteBreed(event) {
+
         let nameBreed = window.location.pathname.split('.')[0].split('/')[1];
         let idToDelete;
-
         if (nameBreed === "NightElves") {
             idToDelete = 4;
         }
@@ -307,11 +307,10 @@ window.addEventListener('load', (event) => {
         });
     }
 
-
     function fetchDeleteDownRating(event) {
-        debuggerl
+        debugger;
         event.preventDefault();
-        var data = {
+        var DataRating = {
             rating: parseFloat(event.currentTarget.rating.value)
         }
         fetch(baseUrl)
@@ -325,7 +324,8 @@ window.addEventListener('load', (event) => {
             })
             .then((data) => {
                 data.forEach(p => {
-                    if (p.rating < data.rating) {
+                    if (parseFloat(p.rating) < parseFloat(DataRating.rating)) {
+                        debugger;
                         fetch(`${baseUrl}${p.id}`, {
                             method: "DELETE"
                         });
@@ -334,16 +334,13 @@ window.addEventListener('load', (event) => {
             })
 
     }
-
     if (document.getElementById("fetch-Btn") != null) {
         document.getElementById("fetch-Btn").addEventListener("click", fetchBreeds);
     }
     if (document.getElementById("fetch-frm") != null) {
         document.getElementById("fetch-frm").addEventListener("submit", fetchPostBreed);
     }
-    if (document.getElementById("fetch-update-frm") != null) {
-        document.getElementById("fetch-update-frm").addEventListener("submit", fetchUpdateBreed);
-    }
+
     if (document.getElementById("fetch-delete-Btn") != null) {
         document.getElementById("fetch-delete-Btn").addEventListener("click", fetchDeleteBreed);
     }
@@ -353,95 +350,8 @@ window.addEventListener('load', (event) => {
     if (document.getElementById("fetch-CreateForm-Btn") != null) {
         document.getElementById("fetch-CreateForm-Btn").addEventListener("click", fetchCreateFromBreed);
     }
-    if (document.getElementById("BL-form") != null) {
-        document.getElementById("BL-form").addEventListener("submit", fetchDeleteDownRating);
+    if (document.getElementById("fetch-BL-form") != null) {
+        document.getElementById("fetch-BL-form").addEventListener("submit", fetchDeleteDownRating);
     }
 
-    //.then(json => console.log(json))
 });
-
-
-
-/*
-<div class="col-md-3">
-                    <label for="name">Name</label>
-                </div>
-                <div class="col-md-7">
-                    <input type="text" name="name" id="form-name">
-                </div>
-                <div class="col-md-3">
-                    <label for="typesOfUnity">Types Of Unitys</label>
-                </div>
-                <div class="col-md-7">
-                    <input type="number" name="typesOfUnity" id="form-age">
-                </div>
-                <div class="col-md-3">
-                    <label for="defaultColor">Default Color</label>
-                </div>
-                <div class="col-md-7">
-                    <input type="text" name="defaultColor" id="form-defaultColor">
-                </div>
-                <div class="col-md-3">
-                    <label for="reign">Reign</label>
-                </div>
-                <div class="col-md-7">
-                    <input type="text" name="reign" id="form-reign">
-                </div>
-                <div class="col-md-3">
-                    <label for="armyName">Army Name</label>
-                </div>
-                <div class="col-md-7">
-                    <input type="text" name="armyName" id="form-armyName">
-                </div>
-                <div class="col-md-3">
-                    <label for="difficulty">Difficulty</label>
-                </div>
-                <div class="col-md-7">
-                    <input type="text" name="difficulty" id="form-difficulty">
-                </div>
-                <div class="col-md-3">
-                    <label for="rating">Rating</label>
-                </div>
-
-                <div class="col-md-7">
-                    <input type="number" name="rating" id="form-rating">
-                </div>
-                <div class="col-md-12">
-                    <input type="submit" value="submit">
-                </div>
-                */
-
-
-
-
-/*
-
-
-            <label for="name">Name</label>
-
-            <input type="text" name="name" id="form-name">
-
-            <label for="typesOfUnity">Types Of Unitys</label>
-
-            <input type="number" name="typesOfUnity" id="form-age">
-
-            <label for="defaultColor">Default Color</label>
-
-            <input type="text" name="defaultColor" id="form-defaultColor">
-
-            <label for="reign">Reign</label>
-
-            <input type="text" name="reign" id="form-reign">
-
-            <label for="armyName">Army Name</label>
-
-            <input type="text" name="armyName" id="form-armyName">
-            <label for="difficulty">Difficulty</label>
-
-            <input type="text" name="difficulty" id="form-difficulty">
-
-            <label for="rating">Rating</label>
-
-            <input type="number" name="rating" id="form-rating">
-
-            <input type="submit" value="submit">*/

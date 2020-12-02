@@ -55,7 +55,7 @@ namespace Practicando_WEBAPI.Services
 
         public BreedModel UpdateBreed(int BreedId, BreedModel breedModel)
         {
-            
+            breedModel.Id = BreedId;
             var breedToUpdate=_libraryRepository.UpdateBreed(_mapper.Map<BreedEntity>(breedModel));
 
             return _mapper.Map<BreedModel>(breedToUpdate);
